@@ -1,0 +1,13 @@
+# Site settings
+title: Will Bierbower
+description: > # this means to ignore newlines until "baseurl:"
+  Personal blag of a software developer with an interest in the
+  scientific python ecosystem, geospatial analysis, and open-source
+  software.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://wbierbower.github.org" # the base hostname & protocol for your site
+github_username:  wbierbower
+linkedin_username:  wbierbower
+# googleplus_username:  wbierbower
+
+# Build settings
