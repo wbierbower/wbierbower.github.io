@@ -15,8 +15,9 @@ def read_vector(filepath):
     datasource = ogr.Open(filepath)
     layer = ds.GetLayerByIndex(0)
     feature = layer.GetFeature(0)
+    return datasource
 
-a = read_vector('path/to/file.shp')
+ds = read_vector('path/to/file.shp')
 {% endhighlight %}
 
 ## Using Fiona
