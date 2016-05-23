@@ -2,7 +2,6 @@
 layout: post
 title:  "How to Read a Raster into Memory as a NumPy Array"
 date:   2016-03-02 17:31:58
-categories: python gdal geospatial
 comments: true
 ---
 

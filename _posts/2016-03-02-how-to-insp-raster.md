@@ -2,7 +2,6 @@
 layout: post
 title:  "How to Inspect the Contents of a Raster"
 date:   2016-03-02 17:34:00
-categories: python gdal geospatial
 comments: true
 ---
 

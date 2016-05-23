@@ -2,7 +2,6 @@
 layout: post
 title:  "How to Read a Vector into Python"
 date:   2016-03-11 11:16:00
-categories: python gdal geospatial
 comments: true
 ---
 

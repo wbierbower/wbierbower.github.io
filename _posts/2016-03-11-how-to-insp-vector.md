@@ -2,7 +2,6 @@
 layout: post
 title:  "How to Inspect the Contents of a Vector"
 date:   2016-03-11 11:00:00
-categories: python gdal geospatial
 comments: true
 ---
 
