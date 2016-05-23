@@ -5,7 +5,7 @@ date:   2016-03-11 11:00:00
 comments: true
 ---
 
-## OGR's `ogrinfo` Command Line Tool
+## Using OGR's `ogrinfo` Command Line Tool
 
 ```bash
 # To list layers
@@ -29,7 +29,7 @@ Provides the following information:
   - Type
   - Coordinates (WKT)
 
-## Fiona's `fio insp` Command Line Tool
+## Using Fiona's `fio insp` Command Line Tool
 
 Provides the following information:
 
@@ -51,7 +51,7 @@ $ fio insp path/to/file.shp
 ```
 
 
-## OGR's Python Bindings
+## Using OGR's Python Bindings
 
 Provides the following information:
 

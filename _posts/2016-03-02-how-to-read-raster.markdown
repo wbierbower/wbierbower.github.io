@@ -5,7 +5,7 @@ date:   2016-03-02 17:31:58
 comments: true
 ---
 
-## GDAL's Python Bindings
+## Using GDAL's Python Bindings
 
 ```python
 #!/usr/bin/env python
@@ -21,7 +21,7 @@ def read_raster(filepath):
 a = read_raster('path/to/file.tif')
 ```
 
-## RasterIO's `rio insp` Command Line Tool
+## Using RasterIO's `rio insp` Command Line Tool
 
 ```bash
 $ pip install rasterio

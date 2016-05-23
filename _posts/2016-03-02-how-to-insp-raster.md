@@ -5,7 +5,7 @@ date:   2016-03-02 17:34:00
 comments: true
 ---
 
-## GDAL's `gdalinfo` Command Line Tool
+## Using GDAL's `gdalinfo` Command Line Tool
 
 Provides the following information:
 
@@ -21,7 +21,7 @@ Provides the following information:
 $ gdalinfo path/to/file.tif
 ```
 
-## RasterIO's `rio insp` Command Line Tool
+## Using RasterIO's `rio insp` Command Line Tool
 
 Provides the following information:
 
@@ -43,7 +43,7 @@ $ rio insp path/to/file.tif
 >>> pp.pprint(src.meta)  # raster metadata
 ```
 
-## GDAL's Python Bindings
+## Using GDAL's Python Bindings
 
 A sampling of what information this method provides:
 
