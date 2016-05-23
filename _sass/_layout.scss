@@ -204,11 +204,17 @@
 
     @include media-query($on-laptop) {
         font-size: 36px;
-    }
+    };
+
+    color: $brand-color;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    h2,h3,h4 {
+      color: $brand-color-darker;
+    }
 
     h2 {
         font-size: 28px;
