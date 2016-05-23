@@ -11,3 +11,5 @@ linkedin_username:  wbierbower
 # googleplus_username:  wbierbower
 
 # Build settings
+excerpt_separator: N/A-----N/A
+markdown: redcarpet
