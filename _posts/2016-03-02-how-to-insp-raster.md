@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Inspect the Contents of a Raster"
+title:  "Inspect the Contents of a Raster"
 date:   2016-03-02 17:34:00
 comments: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Read a Raster into Memory as a NumPy Array"
+title:  "Read a Raster Band into Memory"
 date:   2016-03-02 17:31:58
 comments: true
 ---

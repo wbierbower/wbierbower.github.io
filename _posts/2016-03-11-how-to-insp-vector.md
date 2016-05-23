@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Inspect the Contents of a Vector"
+title:  "Inspect the Contents of a Vector File"
 date:   2016-03-11 11:00:00
 comments: true
 ---

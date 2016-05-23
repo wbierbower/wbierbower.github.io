@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "How to Convert a Raster to a Polygon"
+title:  "Convert a Raster to a Polygon"
 date:   2016-03-11 8:49:00
 comments: true
 ---
+
+
 
 ## Using GDAL and Shapely in Python
 
