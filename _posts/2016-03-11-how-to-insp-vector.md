@@ -3,19 +3,21 @@ layout: post
 title:  "How to Inspect the Contents of a Vector"
 date:   2016-03-11 11:00:00
 categories: python gdal geospatial
+comments: true
 ---
 
-### OGR's `ogrinfo` Command Line Tool
+## OGR's `ogrinfo` Command Line Tool
 
-{% highlight bash %}
+```bash
+# To list layers
 $ ogrinfo path/to/file.shp
-{% endhighlight %}
+```
 
-- Layers
-
-{% highlight bash %}
+```bash
 $ ogrinfo path/to/file.shp (layer)
-{% endhighlight %}
+```
+
+Provides the following information:
 
 - Layer name
 - Geometry type
@@ -28,20 +30,9 @@ $ ogrinfo path/to/file.shp (layer)
   - Type
   - Coordinates (WKT)
 
+## Fiona's `fio insp` Command Line Tool
 
-
-### Fiona's `fio insp` Command Line Tool
-
-{% highlight bash %}
-$ pip install fiona
-$ fio insp path/to/file.shp
-{% endhighlight %}
-
-{% highlight python %}
->>> import pprint as pp
->>> pp.pprint(src.schema)  # vector metadata
-
-{% endhighlight %}
+Provides the following information:
 
 - geometry
   - coordinates
@@ -50,10 +41,31 @@ $ fio insp path/to/file.shp
 - properties
 - type
 
+```bash
+$ pip install fiona
+$ fio insp path/to/file.shp
+```
 
-### OGR's Python Bindings
+```python
+>>> import pprint as pp
+>>> pp.pprint(src.schema)  # vector metadata
+```
 
-{% highlight python %}
+
+## OGR's Python Bindings
+
+Provides the following information:
+
+- Driver Type
+- Layer Count
+- Coordinate System
+- Layer Name
+- Layer Extent
+- Feature Keys
+- Geometry Type
+- Geometry Area
+
+```python
 #!/usr/bin/env python
 import ogr
 
@@ -76,4 +88,4 @@ def insp_vector(filepath):
     print "Geometry Area:", geometry.GetArea()
 
 insp_vector('path/to/file.shp')
-{% endhighlight %}
+```

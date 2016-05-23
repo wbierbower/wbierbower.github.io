@@ -3,15 +3,12 @@ layout: post
 title:  "How to Inspect the Contents of a Raster"
 date:   2016-03-02 17:34:00
 categories: python gdal geospatial
+comments: true
 ---
 
+## GDAL's `gdalinfo` Command Line Tool
 
-
-### GDAL's `gdalinfo` Command Line Tool
-
-{% highlight bash %}
-$ gdalinfo path/to/file.tif
-{% endhighlight %}
+Provides the following information:
 
 - Driver Type
 - Files
@@ -21,17 +18,13 @@ $ gdalinfo path/to/file.tif
 - Corner Coordinates
 - Band Statistics
 
-### RasterIO's `rio insp` Command Line Tool
+```bash
+$ gdalinfo path/to/file.tif
+```
 
-{% highlight bash %}
-$ pip install rasterio
-$ rio insp path/to/file.tif
-{% endhighlight %}
+## RasterIO's `rio insp` Command Line Tool
 
-{% highlight python %}
->>> import pprint as pp
->>> pp.pprint(src.meta)  # raster metadata
-{% endhighlight %}
+Provides the following information:
 
 - Affine Transform
 - Coordinate System
@@ -41,9 +34,28 @@ $ rio insp path/to/file.tif
 - Dimensions
 - Nodata
 
-### GDAL's Python Bindings
+```bash
+$ pip install rasterio
+$ rio insp path/to/file.tif
+```
 
-{% highlight python %}
+```python
+>>> import pprint as pp
+>>> pp.pprint(src.meta)  # raster metadata
+```
+
+## GDAL's Python Bindings
+
+A sampling of what information this method provides:
+
+- Geotransform
+- Coordinate System
+- Band Count
+- Driver Type
+- Dimension
+- Nodata
+
+```python
 #!/usr/bin/env python
 import gdal
 
@@ -70,4 +82,4 @@ def insp_raster(filepath):
     ds, driver = None, None
 
 insp_raster('path/to/file.tif')
-{% endhighlight %}
+```

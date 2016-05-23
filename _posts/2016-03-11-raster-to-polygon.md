@@ -2,13 +2,14 @@
 layout: post
 title:  "How to Convert a Raster to a Polygon"
 date:   2016-03-11 8:49:00
+comments: true
 ---
 
-# Using GDAL and Shapely in Python
+## Using GDAL and Shapely in Python
 
-{% highlight python %}
-# /usr/bin/env python
-#
+```python
+#!/usr/bin/env python
+
 # Convert Raster to Polygon
 #
 # B -- C
@@ -16,6 +17,7 @@ date:   2016-03-11 8:49:00
 # A -- D
 
 import math
+import gdal
 import shapely
 
 
@@ -39,4 +41,4 @@ def get_bounding_box(filepath):
     return bot_left, top_left, top_right, bot_right
 
 poly = shapely.geometry.Polygon(get_bounding_box(raster_filepath))
-{% endhighlight %}
+```
