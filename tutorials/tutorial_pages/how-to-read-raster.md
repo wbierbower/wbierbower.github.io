@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Read a Raster Band into Memory"
-date:   2016-03-02 17:31:58
+permalink: /tutorials/how-to-read-raster.html
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inspect the Contents of a Raster"
-date:   2016-03-02 17:34:00
+permalink: /tutorials/how-to-insp-raster.html
 comments: true
 ---
 

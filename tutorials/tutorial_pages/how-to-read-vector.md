@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Read Vector Data into Python"
-date:   2016-03-11 11:16:00
+permalink: /tutorials/how-to-read-vector.html
 comments: true
 ---
 

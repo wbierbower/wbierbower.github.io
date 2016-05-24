@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inspect the Contents of a Vector File"
-date:   2016-03-11 11:00:00
+permalink: /tutorials/how-to-insp-vector.html
 comments: true
 ---
 
