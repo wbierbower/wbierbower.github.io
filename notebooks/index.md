@@ -5,4 +5,4 @@ permalink: /notebooks/
 in_menu: True
 ---
 
-- [A Jupyter Notebook](./jupyter_intro.html)
+[JavaScript Introduction](http://nbviewer.jupyter.org/url/wbierbower.github.io/notebooks/files/javascript_intro.ipynb)
