@@ -179,6 +179,7 @@
 }
 
 .post-meta {
+    text-align: center;
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -198,6 +199,8 @@
 }
 
 .post-title {
+    text-align: center;
+
     font-size: 36px;
     letter-spacing: -1px;
     line-height: 1;
@@ -207,6 +210,23 @@
     };
 
     color: $brand-color;
+}
+
+.post-subtitle {
+    text-align: center;
+
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    @include media-query($on-laptop) {
+        font-size: 20px;
+    };
+
+    // color: lighten($grey-color, 20%);
+    color: $text-color
 }
 
 .post-content {

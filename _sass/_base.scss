@@ -8,7 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+hr {
+  margin-bottom: 10px;
+}
 
 /**
  * Basic styling
@@ -106,13 +108,23 @@ a {
 /**
  * Blockquotes
  */
+ blockquote:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    float: left;
+    margin-right: 10px;
+}
+
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    background: lighten($brand-color, 40%);
+    padding: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
-    font-style: italic;
+    border-radius: 5px;
+
+
+    // font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
